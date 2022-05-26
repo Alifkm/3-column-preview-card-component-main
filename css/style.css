@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+html .container, body .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+html .container .sedans-wrapper, body .container .sedans-wrapper {
+  background-color: #e38826;
+  width: 300px;
+  padding: 40px 50px 40px 40px;
+  border-radius: 7px 0 0 7px;
+}
+
+html .container .sedans-wrapper img, body .container .sedans-wrapper img {
+  margin-bottom: 30px;
+}
+
+html .container .sedans-wrapper h1, body .container .sedans-wrapper h1 {
+  font-size: 32px;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700px;
+  color: #f2f2f2;
+  margin-bottom: 30px;
+}
+
+html .container .sedans-wrapper p, body .container .sedans-wrapper p {
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400px;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 80px;
+  line-height: 24px;
+}
+
+html .container .sedans-wrapper button, body .container .sedans-wrapper button {
+  background-color: #f2f2f2;
+  border: 3px solid #f2f2f2;
+  color: #e38826;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 30px;
+  padding: 14px 30px;
+}
+
+html .container .sedans-wrapper button:hover, body .container .sedans-wrapper button:hover {
+  background-color: #e38826;
+  color: #f2f2f2;
+  cursor: pointer;
+}
+
+html .container .suv-wrapper, body .container .suv-wrapper {
+  background-color: #006970;
+  width: 300px;
+  padding: 40px 50px 40px 40px;
+}
+
+html .container .suv-wrapper img, body .container .suv-wrapper img {
+  margin-bottom: 30px;
+}
+
+html .container .suv-wrapper h1, body .container .suv-wrapper h1 {
+  font-size: 32px;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700px;
+  color: #f2f2f2;
+  margin-bottom: 30px;
+}
+
+html .container .suv-wrapper p, body .container .suv-wrapper p {
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400px;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 80px;
+  line-height: 24px;
+}
+
+html .container .suv-wrapper button, body .container .suv-wrapper button {
+  background-color: #f2f2f2;
+  border: 3px solid #f2f2f2;
+  color: #006970;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 30px;
+  padding: 14px 30px;
+}
+
+html .container .suv-wrapper button:hover, body .container .suv-wrapper button:hover {
+  background-color: #006970;
+  color: #f2f2f2;
+  cursor: pointer;
+}
+
+html .container .luxury-wrapper, body .container .luxury-wrapper {
+  background-color: #004241;
+  width: 300px;
+  padding: 40px 50px 40px 40px;
+  border-radius: 0 7px 7px 0;
+}
+
+html .container .luxury-wrapper img, body .container .luxury-wrapper img {
+  margin-bottom: 30px;
+}
+
+html .container .luxury-wrapper h1, body .container .luxury-wrapper h1 {
+  font-size: 32px;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700px;
+  color: #f2f2f2;
+  margin-bottom: 30px;
+}
+
+html .container .luxury-wrapper p, body .container .luxury-wrapper p {
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400px;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 80px;
+  line-height: 24px;
+}
+
+html .container .luxury-wrapper button, body .container .luxury-wrapper button {
+  background-color: #f2f2f2;
+  border: 3px solid #f2f2f2;
+  color: #004241;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 30px;
+  padding: 14px 30px;
+}
+
+html .container .luxury-wrapper button:hover, body .container .luxury-wrapper button:hover {
+  background-color: #004241;
+  color: #f2f2f2;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+  html .container, body .container {
+    display: block;
+    height: 1500px;
+  }
+  html .container .sedans-wrapper, body .container .sedans-wrapper {
+    margin: 100px auto auto auto;
+    border-radius: 7px 7px 0 0;
+  }
+  html .container .suv-wrapper, body .container .suv-wrapper {
+    margin: auto;
+  }
+  html .container .luxury-wrapper, body .container .luxury-wrapper {
+    margin: auto;
+    border-radius: 0 0 7px 7px;
+  }
+}
+
+html footer, body footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}

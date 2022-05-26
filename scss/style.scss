@@ -1,0 +1,132 @@
+@import 'config';
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: $very-light-gray;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+
+        .sedans-wrapper {
+            @include wrapperProperty($bright-orange, 300px, 40px 50px 40px 40px);
+            border-radius: 7px 0 0 7px;
+
+            img {
+                margin-bottom: 30px;
+            }
+
+            h1 {
+                @include textProperty(32px, $heading-font, 700px, $very-light-gray);
+                margin-bottom: 30px;
+            }
+
+            p {
+                @include textProperty(15px, $paragraph-font, 400px, $transparent-white);
+                margin-bottom: 80px;
+                line-height: 24px;
+            }
+
+            button {
+                @include buttonProperty($very-light-gray, 3px solid $very-light-gray, $bright-orange, center, none, 15px, 30px, 14px 30px);
+            }
+
+            button:hover{
+                @include buttonHover($bright-orange, $very-light-gray, pointer);
+            }
+
+        }
+
+        .suv-wrapper {
+            @include wrapperProperty($dark-cyan, 300px, 40px 50px 40px 40px);
+
+            img {
+                margin-bottom: 30px;
+            }
+
+            h1 {
+                @include textProperty(32px, $heading-font, 700px, $very-light-gray);
+                margin-bottom: 30px;
+            }
+
+            p {
+                @include textProperty(15px, $paragraph-font, 400px, $transparent-white);
+                margin-bottom: 80px;
+                line-height: 24px;
+            }
+
+            button {
+                @include buttonProperty($very-light-gray, 3px solid $very-light-gray, $dark-cyan, center, none, 15px, 30px, 14px 30px);
+            }
+
+            button:hover{
+                @include buttonHover($dark-cyan, $very-light-gray, pointer);
+            }
+        }
+
+        .luxury-wrapper {
+            @include wrapperProperty($very-dark-cyan, 300px, 40px 50px 40px 40px);
+            border-radius: 0 7px 7px 0;
+
+            img {
+                margin-bottom: 30px;
+            }
+
+            h1 {
+                @include textProperty(32px, $heading-font, 700px, $very-light-gray);
+                margin-bottom: 30px;
+            }
+
+            p {
+                @include textProperty(15px, $paragraph-font, 400px, $transparent-white);
+                margin-bottom: 80px;
+                line-height: 24px;
+            }
+
+            button {
+                @include buttonProperty($very-light-gray, 3px solid $very-light-gray, $very-dark-cyan, center, none, 15px, 30px, 14px 30px);
+            }
+
+            button:hover{
+                @include buttonHover($very-dark-cyan, $very-light-gray, pointer);
+            }
+        }
+
+        @media only screen and (max-width: 1024px) {
+            display: block;
+            height: 1500px;
+
+            .sedans-wrapper {
+                margin: 100px auto auto auto;
+                border-radius: 7px 7px 0 0;
+            }
+
+            .suv-wrapper {
+                margin: auto;
+            }
+
+            .luxury-wrapper {
+                margin: auto;
+                border-radius: 0 0 7px 7px;
+            }
+        }
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
